@@ -53,7 +53,7 @@ Open a [GitHub Issue](https://github.com/OpenSynapseLabs/Clew/issues) with:
 1. Clew version (from **Settings → About** or `clew --version`)
 2. macOS version (`sw_vers -productVersion`)
 3. Mac model (e.g. "M2 Air, 16GB")
-4. Model you were running (e.g. "Arche Codium 3B Q4")
+4. Model you were running (e.g. "Llama 3.2 3B Q4" or "Qwen 2.5 0.5B")
 5. What you expected
 6. What actually happened (paste the traceback if there's one in the terminal)
 7. Steps to reproduce
