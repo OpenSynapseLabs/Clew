@@ -1,30 +1,3 @@
----
-title: "Clew — Local-First AI IDE for macOS"
-description: "Open-source Cursor alternative for Apple Silicon. Run local LLMs (Llama 3, Mistral, Qwen) inside a native code editor with AI agents. 100% offline, no subscriptions, no cloud."
-keywords:
-  - AI IDE
-  - local LLM
-  - offline AI
-  - privacy-first
-  - open source cursor alternative
-  - macOS apple silicon
-  - run LLM locally
-  - GGUF IDE
-  - MLX models
-  - local coding assistant
-  - private AI coding
-  - M1 M2 M3 M4 M5
-  - autonomous AI agent
-  - ollama alternative GUI
-  - LM Studio IDE integration
-  - hugging face models GUI
-  - no cloud AI tool
-  - python IDE AI
-  - code generation offline
-author: "Open Synapse Labs"
-license: "Apache-2.0"
----
-
 <div align="center">
 
 # Clew
@@ -70,9 +43,9 @@ A modern, dark-themed UI built natively for macOS. No Electron, no web wrappers 
 
 | | |
 |:---:|:---:|
-| ![Chat Interface](assets/chat.png) | ![Agent Workspace](https://github.com/OpenSynapseLabs/Clew/edit/main/README.md#:~:text=agent_2.png) |
+| ![Chat Interface](chat.png) | ![Agent Workspace](agent_2.png) |
 | **Chat View** — Natural conversation with your local agent. | **Agent Workspace** — Define tasks and execute code autonomously. |
-| ![My Models](assets/models.png) | ![Settings](assets/settings.png) |
+| ![My Models](models.png) | ![Settings](settings.png) |
 | **Model Manager** — Browse Hugging Face & manage local LLMs. | **Settings** — Configure memory optimization & agent behavior. |
 
 ---
