@@ -70,7 +70,7 @@ A modern, dark-themed UI built natively for macOS. No Electron, no web wrappers 
 
 | | |
 |:---:|:---:|
-| ![Chat Interface](assets/chat.png) | ![Agent Workspace](assets/agent_2.png) |
+| ![Chat Interface](assets/chat.png) | ![Agent Workspace](https://github.com/OpenSynapseLabs/Clew/edit/main/README.md#:~:text=agent_2.png) |
 | **Chat View** — Natural conversation with your local agent. | **Agent Workspace** — Define tasks and execute code autonomously. |
 | ![My Models](assets/models.png) | ![Settings](assets/settings.png) |
 | **Model Manager** — Browse Hugging Face & manage local LLMs. | **Settings** — Configure memory optimization & agent behavior. |
