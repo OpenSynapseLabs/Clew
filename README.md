@@ -10,7 +10,7 @@ The privacy-first alternative to Cursor — with a built-in model manager. Just 
 [![Version](https://img.shields.io/badge/version-v1.0.0--beta-blue.svg)](https://github.com/OpenSynapseLabs/Clew/releases)
 [![Status](https://img.shields.io/badge/status-beta-orange.svg)](#)
 
-**[Download v1.0.0-beta (.dmg)](https://github.com/OpenSynapseLabs/Clew/releases)**
+**[Download v1.0.0-beta (.dmg)](https://github.com/OpenSynapseLabs/Clew/releases)** (coming soon)
 
 </div>
 
@@ -76,7 +76,7 @@ Clew works with any open-source model available on Hugging Face in **GGUF** or *
 No need to install Python, pip, or any dependencies. We provide a pre-built universal application.
 
 1. Go to the [Releases](https://github.com/OpenSynapseLabs/Clew/releases) page.
-2. Download the latest `Clew-vX.X.X-arm64.dmg`.
+2. Download the latest `Clew-vX.X.X-arm64.dmg`. (coming soon)
 3. Double-click to mount, drag **Clew** to **Applications**.
 4. On first launch: Right-click → **Open** → **Open anyway** (to bypass Gatekeeper).
 5. Open **My Models** → **Browse Models** → Download a model (e.g., Llama 3.2 3B) → Click **Activate**.
@@ -90,8 +90,8 @@ git clone https://github.com/OpenSynapseLabs/Clew.git
 cd Clew
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-python main.py
+pip install e .
+clew
 ```
 
 ---
