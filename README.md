@@ -91,7 +91,7 @@ git clone https://github.com/OpenSynapseLabs/Clew.git
 cd Clew
 python3 -m venv .venv
 source .venv/bin/activate
-pip install e .
+pip install -e .
 clew
 ```
 
