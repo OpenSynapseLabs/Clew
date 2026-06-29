@@ -2,67 +2,70 @@
 
 # Clew
 
-**A native, local-first AI IDE for macOS Apple Silicon.**
-The privacy-first alternative to Cursor — with a built-in model manager. Just download the `.dmg` and go.
+**A premium, local-first AI IDE for macOS Apple Silicon.**
+The privacy-first alternative to Cursor — featuring a built-in local model manager, multi-provider API support, and a stunning native interface. Just download the `.dmg` and go.
 
 [![Platform](https://img.shields.io/badge/platform-macOS%20M1%2B%20(Silicon)-lightgrey.svg)]()
 [![Platform](https://img.shields.io/badge/platform-Windows%20(coming%20soon)-blue.svg)]()
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-v1.0.0--beta-blue.svg)](https://github.com/OpenSynapseLabs/Clew/releases)
-[![Status](https://img.shields.io/badge/status-beta-orange.svg)](#)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](#)
 
-**[Download v1.0.0-beta (.dmg)](https://github.com/OpenSynapseLabs/Clew/releases)** (coming soon)
+**[Download Latest Release](https://github.com/OpenSynapseLabs/Clew/releases)**
 
 </div>
 
 ---
 
-> **Clew = Cursor + LM Studio, wrapped in a single .dmg, running 100% on your laptop.** 🚀
-> No Python dependencies to install. No API keys. No subscriptions. No telemetry. 
-> Your codebase never leaves your machine.
+> **Clew = Cursor + LM Studio + Multi-API Gateway, wrapped in a single .dmg.** 🚀
+> No Python dependencies to install. No telemetry. Absolute privacy for local models, with the flexibility to plug in cloud APIs. 
+> Your workflow, supercharged.
 
 ## 🌟 Why Clew?
 
-Two tools dominate the AI developer workflow today, but both force you to compromise. Clew closes the gap.
+Most AI IDEs force you to choose between local privacy and cloud capabilities. Clew bridges the gap by offering a unified, premium experience natively built for macOS.
 
-| Tool | What it gives you | What it doesn't |
-|:---:|:---|:---|
-| **Cursor** | Polished editor with deeply integrated AI. | Cloud-only inference. Privacy concerns. $20/mo subscription. |
-| **LM Studio** | Great GUI for downloading and running local models. | No editor. No agent. You still need a separate IDE to actually code. |
-
-**Clew ships everything in one native macOS app:**
-- 🧠 **Agent Runtime:** Autonomous task execution (plan, read, write, run).
-- 💾 **Model Manager:** Browse Hugging Face, download, and hot-swap local models with one click.
-- 📝 **Code Editor:** Multi-tab editing, syntax highlighting, and built-in terminal.
-- 🔒 **Absolute Privacy:** Everything runs locally. Zero network calls by default.
+**Clew ships everything in one app:**
+- 🧠 **Multi-Provider Inference:** Seamlessly switch between local models (GGUF/MLX) and cloud APIs (Anthropic, z.ai, and many others).
+- 🛰️ **Built-in API Gateway:** For maximum speed, Clew runs a local server that efficiently handles and routes API requests and responses.
+- 📂 **Integrated Code Viewer:** Select a project directory and instantly read any file in the built-in Viewer without leaving the app.
+- ✨ **Premium UI/UX:** A breathtakingly polished interface with light, dark, and system themes, complete with ambient background effects simulating neural synapses.
+- 🔒 **Absolute Privacy:** Everything local runs entirely on your machine. Zero outbound calls unless you explicitly use a cloud API.
 
 ---
 
 ## 🖼️ Visual Tour
 
-A modern, dark-themed UI built natively for macOS. No Electron, no web wrappers — pure performance on Apple Silicon.
+A meticulously crafted interface built natively for macOS. No Electron. Pure performance, gorgeous aesthetics.
 
 | | |
 |:---:|:---:|
-| ![Chat Interface](chat.png) | ![Agent Workspace](agent_2.png) |
-| **Chat View** — Natural conversation with your local agent. | **Agent Workspace** — Define tasks and execute code autonomously. |
-| ![My Models](models.png) | ![Settings](settings.png) |
-| **Model Manager** — Browse Hugging Face & manage local LLMs. | **Settings** — Configure memory optimization & agent behavior. |
+| ![Main Workspace](Screenshot%202026-06-29%20at%2018.42.21.png) | ![Desktop Integration](Screenshot%202026-06-29%20at%2018.42.34.png) |
+| **Unified Workspace** — Natural language task composer with templates and instant project indexing. | **Native Experience** — Seamlessly integrates into your macOS desktop environment. |
+| ![Agent View](agent_2.png) | ![Chat View](chat.png) |
+| **Agent Control** — Define tasks, monitor resource usage, and track token consumption in real-time. | **Chat & Terminal** — Converse with your agent and execute commands in a unified space. |
+| ![Skills Marketplace](marketplace.png) | *Internal Code Viewer & Themes (Try it live!)* |
+| **Skills Marketplace** — Browse and load specialized AI skills. | **Code Viewer** — Open and read your entire project structure effortlessly on the right panel. |
+
+*(Note: The interface now features stunning ambient synapse effects in the background, which can be toggled in settings).*
 
 ---
 
-## 🧠 Supported Models
+## 🧠 Models & APIs
 
-Clew works with any open-source model available on Hugging Face in **GGUF** or **MLX** formats. No vendor lock-in.
+Clew gives you the ultimate freedom in choosing your inference engine. 
 
-**Recommended Models for Apple Silicon:**
+**Local Models (GGUF / MLX):**
+Works with any open-source model on Hugging Face. 
 *   **Llama 3.1 / 3.2** (Meta) — Excellent general-purpose coding and reasoning.
 *   **Mistral / Mixtral** (Mistral AI) — Fast, efficient, great at following instructions.
 *   **Qwen 2.5** (Alibaba) — Outstanding performance per parameter size.
 *   **Phi-3 / Phi-3.5** (Microsoft) — Incredible speed and logic for small sizes.
-*   **Gemma 2** (Google) — Strong reasoning capabilities.
 
-*You can download and switch between any of these directly from the "My Models" tab inside the app.*
+**Cloud APIs:**
+Don't want to run models locally? Bring your own API keys. Clew natively supports:
+*   **Anthropic** (Claude family)
+*   **z.ai** and other major providers.
+*   *All routed through Clew's high-speed internal API server for minimal latency.*
 
 ---
 
@@ -70,21 +73,19 @@ Clew works with any open-source model available on Hugging Face in **GGUF** or *
 
 ### Requirements
 - **macOS 13+** on **Apple Silicon (M1, M2, M3, M4, M5)**.
-- ~4 GB of free RAM for small models (e.g., Qwen 0.5B), ~8-10 GB for standard 7B-8B models.
+- ~4 GB of free RAM for small local models, ~8-10 GB for standard 7B-8B models.
 
 ### The Easy Way (Recommended)
 
-No need to install Python, pip, or any dependencies. We provide a pre-built universal application.
+Clew comes with a built-in auto-updater. You only need to install it once!
 
 1. Go to the [Releases](https://github.com/OpenSynapseLabs/Clew/releases) page.
-2. Download the latest `Clew-vX.X.X-arm64.dmg`. (coming soon)
+2. Download the latest `Clew-vX.X.X-arm64.dmg`.
 3. Double-click to mount, drag **Clew** to **Applications**.
 4. On first launch: Right-click → **Open** → **Open anyway** (to bypass Gatekeeper).
-5. Open **My Models** → **Browse Models** → Download a model (e.g., Llama 3.2 3B) → Click **Activate**.
+5. Open **Settings** → Choose your theme, configure your API keys or download a local model.
 
 ### From Source (For Developers)
-
-If you want to hack on Clew or run it directly from the command line:
 
 ```bash
 git clone https://github.com/OpenSynapseLabs/Clew.git
@@ -99,22 +100,41 @@ clew
 
 ## 🏁 Quick Start
 
-1. **Open a Folder:** `File → Open Folder…` (⌘O). Clew indexes your codebase in the background.
-2. **Load a Model:** Go to **My Models** → **Browse Models**. Pick a model that fits your RAM and download it.
-3. **Chat:** Switch to the **Chat** view. Ask questions about your code, request refactors, or generate boilerplate.
-4. **Run Agent:** Switch to the **Agent** view. Describe a task (e.g., *"Add a REST API endpoint to app.py and write tests for it"*) and click **Run Agent**. Watch it plan and execute.
+1. **Open a Project:** `File → Open Folder…` (⌘O). Clew indexes your codebase, and the **Code Viewer** opens on the right, letting you read any file instantly.
+2. **Configure Inference:** Go to **Settings**. Add an API key (e.g., Anthropic) or go to **My Models** to download a local one.
+3. **Pick a Template:** In the main workspace, choose a prompt template (e.g., *Code Project*), select a Skill, and describe your task.
+4. **Run Agent:** Watch Clew plan, read, write, and execute code autonomously. Live token counting keeps you informed of context usage.
 
 ---
 
 ## ✨ Key Features
 
 <details>
-<summary><strong>🧩 Native Editor & IDE</strong></summary>
+<summary><strong>🎨 Premium UI & Customization</strong></summary>
 
-- Multi-tab code editor with syntax highlighting, line numbers, and find/replace.
-- Built-in terminal panel for running scripts and commands without leaving the app.
-- Native macOS integration: custom menus, dark-mode-aware palette, high-DPI support.
-- Project-wide search to instantly find functions and variables across your codebase.
+- **Theme Engine:** Switch between Light, Dark, and System themes.
+- **Ambient Synapse Effects:** Beautiful background animations mimicking neural pathways. Can be toggled off in settings for a distraction-free environment.
+- **Integrated Code Viewer:** A powerful right-panel viewer that lets you read and explore your entire project directory without opening external editors.
+- Native macOS integration: custom menus, high-DPI support, and flawless typography.
+
+</details>
+
+<details>
+<summary><strong>🧩 Unified Workspace & Templates</strong></summary>
+
+- **Natural Language Task Composer:** Describe what you want to build in plain English.
+- **Prompt Templates:** Pre-configured templates for rapid task initiation. Just insert your specific words and go.
+- **Agent Skills:** Reusable context profiles to guide the agent's behavior.
+
+</details>
+
+<details>
+<summary><strong>⚙️ Advanced Inference & API Gateway</strong></summary>
+
+- **Multi-Provider Support:** Switch between local LLMs and cloud APIs (Anthropic, z.ai, etc.) on the fly.
+- **Local API Server:** Clew spins up a lightweight local server to handle API requests and routing, ensuring maximum speed and streaming performance.
+- **Detailed Local Settings:** Fine-tune local model parameters (threads, context size, GPU layers) directly in the app.
+- **Live Token Counting:** Accurate, real-time tracking of token usage during agent runs and chats.
 
 </details>
 
@@ -127,53 +147,17 @@ clew
 
 </details>
 
-<details>
-<summary><strong>⚡ Performance & Memory Optimization</strong></summary>
-
-- **TurboQuant Engine:** Pure-NumPy KV-cache compression to significantly reduce RAM usage while maintaining model quality.
-- Native Apple Silicon optimization: Leverages Metal and MLX where available for blazing fast inference.
-
-</details>
-
 ---
 
 ## 🗺️ Roadmap
 
-We are actively developing Clew. Here is what to expect next:
+We are actively developing Clew. Here is what to expect in upcoming releases:
 
-- **v1.0.0-beta (Current):** Core editor, agent runtime, model manager, chat interface.
-- **v1.0.1 (Next):** 
-  - Stabilization and bug fixes based on community feedback.
-  - UI/UX polish (better typography, spacing, and visual hierarchy).
-  - Core function refinements and smoother streaming.
-- **v1.1.0:** Auto-updater (Sparkle integration), inline "Apply" buttons in chat for easy diffing.
-- **v1.2.0:** Git integration (branch status, diff viewer, commit UI).
-- **Future:** Advanced debugging, plugin system, Windows/Linux ports.
-
-- **v1.0.1 (Next):**
-  - New unified AI workspace.
-  - Natural-language task composer.
-  - Templates & Skills system.
-  - Improved onboarding experience.
-  - Major UI redesign and navigation improvements.
-  - Smoother streaming and stability fixes.
-
-### 👀 v1.0.1 Preview
-
-> 🚧 Work in progress. The interface shown below is from a preview build and may change before release.
-
-<p align="center">
-  <img src="clew_v101.png" alt="Clew v1.0.1 Preview" width="900"/>
-</p>
-
-**What's new:**
-
-- ✨ New centralized workspace.
-- 🧠 Describe tasks in natural language.
-- 🏗️ Template-driven workflows.
-- 🛠️ Reusable Skills system.
-- 🚀 Faster onboarding for new users.
-- 🎯 Cleaner visual hierarchy and navigation.
+- **Expanded Templates & Skills:** Introducing specialized modes like *Office Worker* for document tasks and *Heavy Code* for deep, complex repository refactoring.
+- **Git Integration:** Branch status, diff viewer, and commit UI.
+- **Advanced Debugging:** Deep introspection of agent runs and variable states.
+- **Plugin System:** Allow the community to build and share their own tools.
+- **Cross-Platform:** Windows and Linux ports.
 
 ---
 
